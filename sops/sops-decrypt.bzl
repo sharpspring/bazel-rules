@@ -49,10 +49,10 @@ def _sops_decrypt_impl(ctx):
         outputs = outputs,
         arguments = [],
         executable = exec_file,
+        use_default_shell_env = True,
         execution_requirements = {
             "local": "1",
         },
-        use_default_shell_env = True
     )
 
     return [

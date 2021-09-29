@@ -80,7 +80,7 @@ fi
 {HELM_PATH} env
 
 # {HELM_PATH} repo list
-{HELM_PATH} package {CHART_PATH} --dependency-update --destination {PACKAGE_OUTPUT_PATH} --app-version {APP_VERSION} --version $HELM_CHART_VERSION 1>>/dev/null
+{HELM_PATH} package {CHART_PATH} --debug --dependency-update --destination {PACKAGE_OUTPUT_PATH} --app-version {APP_VERSION} --version $HELM_CHART_VERSION 
 
 mv {PACKAGE_OUTPUT_PATH}/{HELM_CHART_NAME}-$HELM_CHART_VERSION.tgz {PACKAGE_OUTPUT_PATH}/{HELM_CHART_NAME}.tgz
 
