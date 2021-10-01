@@ -31,5 +31,5 @@ function read_variables() {
 
 %{stamp_statements}
 
-gsutil cp {SRC_FILE} {DESTINATION}
+gsutil cp -z js {SRC_FILE} {DESTINATION}
 
